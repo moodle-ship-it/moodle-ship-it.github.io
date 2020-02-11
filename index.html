@@ -14,112 +14,87 @@
 <body>
 	<!--This is our NavBar-->
 	<div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand" href="#">Navbar</a>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav_font">
+		  <img src="img/moodlelogo.png" width=75px height=75px>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#About_Us">About<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#">Disabled</a>
+		        <a class="nav-link" href="#Powerful_change">The app<span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
+		   <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
 		  </div>
 		</nav>
 	</div>
-	<!--This is our Headline Image with Value Prop-->
-	<div class="container">
-		<div class="row row_background_image">
-			<!--<p class="image_overlay_text">
-				<span>Journalling, remimagined<span class='spacer'></span>
-				<span class='spacer'></span>Build your happiness habit</span>
-			</p>-->
-		</div>
-		<!--JUMBOTRON-->
+	<!--JUMBOTRON-->
 		<div class="jumbotron card card_image row_background_image">
   			<div class="text-white text-center py-5 px-4">
     			<div>
       				<span class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Journalling, reimagined</strong></span>
       				<br>
-      				<br>
-      				<p class="mx-3 mb-3">
-      					Build your happiness habit
+      				<br>      	
+      				<p class="mx-3 mb-5 jumbotron_subheading">
+      				Build your happiness habit with Moodle
       				</p>
-      				<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Sign Up</a>
+      				<!--<p class="mx-3 mb-3">
+      					Build your happiness habit
+      				</p>-->
+      				<button type="button" class="btn btn-primary btn-lg signupbutton">Sign Up</button>
     			</div>
   			</div>
 		</div>
+	<!--This is our Headline Image with Value Prop-->
+	<div class="container">
+		<!--<div class="row row_background_image">-->
+			<!--<p class="image_overlay_text">
+				<span>Journalling, remimagined<span class='spacer'></span>
+				<span class='spacer'></span>Build your happiness habit</span>
+			</p>-->
 		<!--This is our Powerful Change section header-->
 		<div class="row title_row_height">
-			<p class="header_text">
+			<p id="Powerful_change" class="header_text">
 				Powerful change
 			</p>
 		</div>
-		<!--This is our Powerful Change section features-->
-		<div class="row centered_column">
-			<div class="col-md-3">
-				<img src="img/laptop90.png" width="100" height="100">
-				<img src="img/iphone96.png" width="100" height="100">
-			</div>
-			<div class="col-md-3">
-				<img src="img/track96.png" width="100" height="100">
-			</div>
-			<div class="col-md-3">
-				<img src="img/workflow100.png" width="90" height="90">
-			</div>
-			<div class="col-md-3">
-				<img src="img/beautiful96.png" width="100" height="100">
-			</div>
-		</div>
+		<!--This is our Powerful Change section features-->	
 		<div class="row centered_column" >
 			<div class="col-md-3">
 				<p>
-					Use anytime, anywhere
+					<img src="img/laptop90.png" width="100" height="100">
+					<img src="img/iphone96.png" width="100" height="100">
+					<br>Use anytime, anywhere
 				</p>
 			</div>
 			<div class="col-md-3">
 				<p>
-					Track your mood over time
+					<img src="img/track96.png" width="100" height="100">
+					<br>Track your mood over time
 				</p>
 			</div>
 			<div class="col-md-3">
 				<p>
-					Build routine easily
+					<img src="img/workflow100.png" width="90" height="90">
+					<br>Build routine easily
 				</p>
 			</div>
 			<div class="col-md-3">
 				<p>
-					Beautifully elegant design
+					<img src="img/beautiful96.png" width="100" height="100">
+					<br>Beautifully elegant design
 				</p>
 			</div>
 		</div>	
 		<!--Science of Happiness and Behavioural Change header row-->
 		<div class="row title_row_height">
 			<p class="header_text">
-				The Science of Happiness and Behaviour Change
+				The Science of Happiness
 			</p>
 		</div>
 		<!--Science of Happiness and Behavioural Change features row-->
@@ -151,11 +126,10 @@
 		</div>
 		<div class="row centered_column">
 			<div class="col-md-6">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/glFMpyx_oU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/glFMpyx_oU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div class="col-md-6">
 				<p class="paragraph_text">
-					<br>
 					“I love that my journaling has now become part of my daily routine. It makes me appreciate things before I do anything else in the day, and review the day before going to sleep. I really recommend this practice to everyone!”
 				</p>
 				<p class="paragraph_text_italics">
@@ -165,7 +139,7 @@
 		</div>
 		<!--This is our About us header-->
 		<div class="row title_row_height">
-			<p class="header_text">
+			<p id="About_Us" class="header_text">
 				About us
 			</p>
 		</div>
@@ -181,19 +155,29 @@
 				</p>
 			</div>
 			<div class="col-md-6">
-				<p>
-				</p>
+				<img class="friends_image_format" src="img/friends_photo.jpg">
 			</div>
 		</div>
 		<!--This is our second Sign up button-->
-		<div class="row">
+		<div class="row title_row_height">
 			<a href="#" class="btn btn-primary btn-lg active button_format" role="button" aria-pressed="true">Sign Up</a>
 		</div>
+		
 		</div>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			<ul class="nav justify-content-center social_button_format">
+  				<li class="nav-item">
+    				<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+  				</li>
+  				<li class="nav-item social_button_format">
+    				<a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+  				</li>
+  				<li class="nav-item social_button_format">
+    				<a href="https://goo.gl/maps/qnPkCtiADeLQDJLJA" target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a>
+  				</li>
+			</ul>
 
 </body>
 </html>
