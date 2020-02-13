@@ -32,6 +32,9 @@
         const entriesContent = ids.map(id => `
           <div>
             <h3>${data.entries[id].title}</h3>
+            <h4>${data.entries[id].word1}</h4>
+            <h4>${data.entries[id].word2}</h4>
+            <h4>${data.entries[id].word3}</h4>
             <a href="single-entry.html?id=${id}">view</a>
             <h4>Published: ${new Date(data.entries[id].createdat).toDateString()} - ${new Date(data.entries[id].createdat).toLocaleTimeString()}</h4>
             <p>${data.entries[id].description}</p>

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Moodle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/91d8613e5c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css"> 
+<body>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,21 +22,62 @@
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#">Create entry</a>
-  </nav>
-  <h1>Create diary entry</h1>
-  <div id="success-msg" class="hidden" style="color: teal">Entry created - <a href="/" id="new-entry-link">view</a></div>
-  <form id="diary-form" action="#">
-    <label for="title">Entry title:</label>
-    <input type="text" name="title">
-    <br/>
-    <label for="description">Entry text:</label>
-    <textarea name="description"></textarea>
-    <br/>
-    <input type="submit" value="Save">
-  </form>
+  <!--This is our NavBar-->
+  <div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light nav_font">
+      <img src="img/moodlelogo.png" width=75px height=75px>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#About_Us">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Powerful_change">Learn more<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://moodle-ship-it.github.io/diary">The app<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--This is the code Hamnza gave us-->
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>  
+    <br>
+    <p class="row header_text">Tell us how you're feeling today in 3 words</p>
+    <br>
+    <div id="success-msg" class="hidden" style="color: teal">Entry created - <a href="/" id="new-entry-link">view</a></div>
+    <form id="diary-form" action="#">
+      <label for="word1" class="paragraph_text">1</label>
+      <input type="text" name="word1" class="three_word_box">
+      <br/>
+      <label for="word2" class="paragraph_text">2</label>
+      <input type="text" name="word2" class="three_word_box">
+      <br/>
+      <label for="word3" class="paragraph_text">3</label>
+      <input type="text" name="word3" class="three_word_box">
+      <br/>
+      <br>
+      <p class="row header_text">Fancy expanding on that?</p>
+      <br>
+      <label for="title" class="paragraph_text">Write the title for your diary entry:</label>
+      <input type="text" name="title" class="three_word_box">
+      <br/>
+      <br>
+      <label for="description" class="paragraph_text">Reflect on your day here:</label>
+      <textarea name="description" class="para_word_box"></textarea>
+      <br/>
+    <input type="submit" class="btn btn-primary btn-lg signupbutton" value="Save">
+    </form>
+  </div>
 </body>
 
 
@@ -39,8 +90,11 @@
     console.log(ev);
 
     const data = {
-      title: ev.target.elements[0].value,
-      description: ev.target.elements[1].value,
+      title: ev.target.elements[3].value,
+      description: ev.target.elements[4].value,
+      word1: ev.target.elements[0].value,
+      word2: ev.target.elements[1].value,
+      word3: ev.target.elements[2].value
     }
 
     fetch(url, {
