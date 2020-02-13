@@ -49,12 +49,15 @@
   <title>Document</title>
 </head>
 <body></body>
-  <nav>
+<br>
+  <nav align="center">
     <a href="create-entry.html">
     <button type="button" class="btn btn-primary btn-lg">Create entry</button></a>
   </nav>
-
-  <h1>My diary</h1>
+  <br>
+  <hr style="border-bottom: dotted 1px #D8BFD8" />
+  <br>
+  <p class="header_text">My diary</p>
 
   <div id="diary-entries">
     <h3>Loading entries&hellip;</h3>
@@ -73,13 +76,11 @@
         const sortedEntries = ids.sort((a, b) => new Date(data.entries[a]).getTime() - new Date(data.entries[b]).getTime());
         const entriesContent = ids.map(id => `
           <div>
-            <h3>${data.entries[id].title}</h3>
-            <h4>${data.entries[id].word1}</h4>
-            <h4>${data.entries[id].word2}</h4>
-            <h4>${data.entries[id].word3}</h4>
-            <a href="single-entry.html?id=${id}">view</a>
+            <!--<p class="header_text">${data.entries[id].title}</p>
+            <p class="paragraph_text_italics">${data.entries[id].grateful1}, ${data.entries[id].grateful2}, ${data.entries[id].grateful3}</p>
+            <p class="paragraph_text_italics">${data.entries[id].great1}, ${data.entries[id].great2}, ${data.entries[id].great3}</p>
             <h4>Published: ${new Date(data.entries[id].createdat).toDateString()} - ${new Date(data.entries[id].createdat).toLocaleTimeString()}</h4>
-            <p>${data.entries[id].description}</p>
+            <p>${data.entries[id].reflection}</p>
             <hr />
           </div>
         `);
