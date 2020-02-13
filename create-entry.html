@@ -40,8 +40,15 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div>
     <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
-<small><i><a href="com.brainyquote.url.CreatedUrl@26c0f757" target="_blank" rel="nofollow">more Quotes</a></i></small>
+<!--<small><i><a href="com.brainyquote.url.CreatedUrl@26c0f757" target="_blank" rel="nofollow">more Quotes</a></i></small>-->
+  </div>
     <br>  
     <br>
     <p class="row header_text">Tell us how you're feeling today in 3 words</p>
@@ -70,7 +77,7 @@
     <input type="submit" class="btn btn-primary btn-lg signupbutton" value="Save">
     </form>
   </div>
-</body>
+  </body>
 
 
 <!-- This script tag powers our form by sending the information to the API once you've cliked submit!  -->
@@ -101,6 +108,7 @@
       if (res.id) {
         document.querySelector('#success-msg').classList.remove('hidden');
         document.querySelector('#new-entry-link').setAttribute('href', `/single-entry.html?id=${res.id}`);
+        location.replace("https://moodle-ship-it.github.io/diary");
       }
     })
   });
