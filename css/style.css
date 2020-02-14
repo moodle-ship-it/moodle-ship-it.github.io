@@ -17,7 +17,7 @@
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 36px;
-  font-size: 4vmax;
+  font-size: 3.5vmax;
   color: #4a4a4a;
   }
 .title_row_height{
@@ -46,7 +46,7 @@
 .button_format{
   margin: auto;
 }
-span { 
+.jumbotron_text { 
    color: white; 
    font: bold 48px/48px "Noto Sans JP", sans-serif;
    letter-spacing: -1px;  
@@ -54,9 +54,6 @@ span {
    background: rgba(0, 0, 0, 0.7);
    padding: 15px;
    /*padding: 10px;*/
-  }
-span.spacer {
-   /*padding:0 2px;*/
   }
 .jumbotron_subheading { 
    color: white; 
@@ -88,4 +85,44 @@ span.spacer {
 }
 .social_button_format{
   margin-left: 2%;
+}
+.three_word_box{
+  width: 20%;
+}
+.para_word_box{
+  width: 20%;
+  height: 20%;
+}
+.three_words_input{
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  font-size: 1.5vmax;
+  padding-left: 10px;
+  color: #A9A9A9;
+}
+.date_time_diary{
+  text-align: justify;
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 1.8vmax;
+  padding-left: 10px;
+  color: #4a4a4a;
+}
+.paragraph_text_reflection{
+  text-align: left;
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-size: 1.5vmax;
+    font-style: italic;
+    padding-left: 10px;
+    color: #4a4a4a;
+}
+.input_info{
+  text-align: justify;
+  font-family: "Noto Serif", serif;
+  font-size: 10px;
+  font-size: 1.5vmax;
+  padding-left: 10px;
+  color: #4a4a4a;
 }
