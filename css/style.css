@@ -138,3 +138,8 @@
     background-color: #8064A2;
     border-color: #8064A2;
 }
+@media only screen and (max-width : 900px){
+.conditional_display{
+  display: none;
+}
+}
