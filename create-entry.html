@@ -46,17 +46,14 @@
     <br>
     <br>
   <!--display a date with a label-->
-  <div>
+  <!-- <div>
     <form id="diary-form" action="#">
       <label for="Date" class="paragraph_text">Date</label>
       <input type="text" name="Date" class="three_word_box">
       <br/>
     </form>
-  </div>
+  </div> -->
   <div>
-    <br>
-    <hr style="border-bottom: dotted 1px #D8BFD8" />
-    <br>
     <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
 <!--<small><i><a href="com.brainyquote.url.CreatedUrl@26c0f757" target="_blank" rel="nofollow">more Quotes</a></i></small>-->
   </div>
@@ -93,10 +90,9 @@
       <br>
       <hr style="border-bottom: dotted 1px #D8BFD8" />
       <br>
-      <p class="row header_text">Daily affirmation I am...</p>
+      <p class="row header_text">Daily affirmation: I am...</p>
       <br/>
       <br>
-      <label for="reflection" class="paragraph_text">Reflect on your day here:</label>
       <textarea name="reflection" class="para_word_box"></textarea>
       <br/>
       <br>
@@ -118,13 +114,13 @@
     console.log(ev);
 
     const data = {
-      reflection: ev.target.elements[6].value,
       grateful1: ev.target.elements[0].value,
       grateful2: ev.target.elements[1].value,
       grateful3: ev.target.elements[2].value,
       great1: ev.target.elements[3].value,
       great2: ev.target.elements[4].value,
-      great3: ev.target.elements[5].value
+      great3: ev.target.elements[5].value,
+      reflection: ev.target.elements[6].value
     }
 
     fetch(url, {

@@ -72,18 +72,21 @@
       fetch(url)
       .then(r => r.json())
       .then(data => {
+        console.log(data);
         const ids = Object.keys(data.entries)
         const sortedEntries = ids.sort((a, b) => new Date(data.entries[a]).getTime() - new Date(data.entries[b]).getTime());
         const entriesContent = ids.map(id => `
           <div>
-            <!--<p class="header_text">${data.entries[id].title}</p>
-            <p class="paragraph_text_italics">${data.entries[id].grateful1}, ${data.entries[id].grateful2}, ${data.entries[id].grateful3}</p>
-            <p class="paragraph_text_italics">${data.entries[id].great1}, ${data.entries[id].great2}, ${data.entries[id].great3}</p>
-            <h4>Published: ${new Date(data.entries[id].createdat).toDateString()} - ${new Date(data.entries[id].createdat).toLocaleTimeString()}</h4>
-            <p>${data.entries[id].reflection}</p>
+            <p class="date_time_diary">Published: ${new Date(data.entries[id].createdat).toDateString()} - ${new Date(data.entries[id].createdat).toLocaleTimeString()}</p>
+            <p class="paragraph_text">Three things I'm grateful for...</p>
+            <p class="input_info">${data.entries[id].grateful1}, ${data.entries[id].grateful2}, ${data.entries[id].grateful3}</p>
+            <p class="paragraph_text">Three things that would improve today...</p>
+            <p class="input_info">${data.entries[id].great1}, ${data.entries[id].great2}, ${data.entries[id].great3}</p>
+            <p class="paragraph_text">I am...</p>
+            <p class="paragraph_text_reflection">${data.entries[id].reflection}</p>
             <hr />
           </div>
-        `);
+        `).join("");
         diaryEntries.innerHTML = entriesContent;
       })
     });
